@@ -1,0 +1,33 @@
+.whatsapp-fixed {
+  position: fixed;
+  right: 10px; /* Adjust the right position as needed */
+  bottom: 50%; /* Centers it vertically */
+  transform: translateY(50%); /* Align center */
+  z-index: 999; /* Make sure it's above other items */
+  padding: 10px;
+  background-color: #25D366; /* WhatsApp brand color */
+  color: white;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Optional: Adds a shadow effect */
+  text-align: center;
+  font-size: 30px; /* Adjust the size of the icon */
+  line-height: 1; /* Adjust the line height to ensure the icon is centered */
+}
+
+.whatsapp-icon {
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-fixed:hover .whatsapp-icon {
+  transform: scale(1.1); /* Slightly enlarges the icon on hover */
+}
+
+.whatsapp-fixed:hover {
+  text-decoration: none; /* Removes underline text decoration */
+  background-color: #25D366; /* Keeps the WhatsApp brand color on hover */
+}
+
+.whatsapp-fixed:hover .whatsapp-icon {
+  color: white; /* Keeps the icon color white on hover */
+  transform: scale(1.1); /* Slightly enlarges the icon on hover */
+}
